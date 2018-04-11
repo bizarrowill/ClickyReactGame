@@ -20,7 +20,7 @@ const Header = props => (
     <Row>
       <Col size="lg-12 md-12 sm-12 xs-12">
         <p class="text-center">
-          Click on a Pro to play, but don't click the same one twice! Can you
+          Click on a Pro to play, but don't click the same legend twice! Can you
           get 12/12?
         </p>
       </Col>

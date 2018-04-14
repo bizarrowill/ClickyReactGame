@@ -13,6 +13,7 @@ class App extends Component {
   };
 
   getCharacter = function(array, id) {
+    console.log("this is a log");
     return array.filter(array => array.id === id);
   };
 

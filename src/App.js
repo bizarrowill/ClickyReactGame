@@ -22,9 +22,7 @@ class App extends Component {
     var thisCharacter = this.getCharacter(characters, id);
 
     if (thisCharacter[0].clicked) {
-      characters.map(characters => {
-        characters.clicked = false;
-      });
+      characters.map(characters => (characters.clicked = false));
       if (this.state.score > this.state.hiscore) {
         this.setState({ hiscore: this.state.score });
       }

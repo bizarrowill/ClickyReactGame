@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Tile from "./components/Tile";
 import Header from "./components/Header";
-import { Container } from "./components/Grid";
+import Container from "./components/Grid/Container.js";
 import characters from "./characters.json";
 
 class App extends Component {

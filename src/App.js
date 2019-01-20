@@ -19,7 +19,7 @@ class App extends Component {
 
   selectCard = id => {
     console.log(this.state);
-    var thisCharacter = this.getCharacter(characters, id);
+    let thisCharacter = this.getCharacter(characters, id);
 
     if (thisCharacter[0].clicked) {
       characters.map(characters => (characters.clicked = false));
@@ -29,11 +29,11 @@ class App extends Component {
       this.setState({ score: 0 });
       this.setState({ message: "GAME OVER!" });
     } else {
-      for (var i = 0; i < characters.length; i++) {
+      for (let i = 0; i < characters.length; i++) {
         if (characters[i].id === id) {
           characters[i].clicked = true;
-          var a = Math.floor(Math.random() * 12);
-          var b = characters[i];
+          let a = Math.floor(Math.random() * 12);
+          let b = characters[i];
           characters[i] = characters[a];
           characters[a] = b;
         }
